@@ -2,13 +2,12 @@ package com.example.sairamkrishna.myapplication;
 
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
-
 import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
-
+import android.R.*;
 import android.graphics.Bitmap;
 import android.os.BatteryManager;
 import android.support.v7.app.ActionBarActivity;
@@ -25,6 +24,8 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.camera.R;
 
 import java.util.ArrayList;
 import java.util.Set;
@@ -66,8 +67,8 @@ public class MainActivity extends ActionBarActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
+        getMenuInflater().inflate(R.menu.activity_main, menu);
+        return true ;
     }
 
     @Override
@@ -83,5 +84,9 @@ public class MainActivity extends ActionBarActivity {
             return true;
         }
         return super.onOptionsItemSelected(item);
+
+
+
     }
 }
+
